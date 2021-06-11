@@ -1,0 +1,10 @@
+#slide_cont>img{
+    display: block;
+    /*
+    img의 고유 간격이 없어짐
+    */
+}
+
+#gallery>ul{
+    float: left;
+}

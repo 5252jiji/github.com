@@ -1,0 +1,50 @@
+#popup{
+    width: 500px;
+    height: 500px;
+    background-color: darkgoldenrod;
+    position: fixed;
+    left: 750px;
+    top: 100px;
+    z-index: 9;
+    /*
+    기본적으로 1로 설정이 되어있고 숫자가 높을수록
+    위에 올라옴
+    */
+    border: 1px solid #333;
+    font-size: 14px;
+
+    box-shadow: rgba(0, 0, 0, 0.5) 0 0 0 99999px;
+    display: none;
+    /*
+    팝업창 외에 그림자지게 하면
+    닫았을때 display:none;상태가 되게 하면 됨
+    */
+}
+
+#popup>div:first-child{
+    background-color: palegoldenrod;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#popup>div:nth-child(2){
+    background-color: palegreen;
+    font-size: 16px;
+}
+
+#popup>div:nth-child(2)>p{
+    margin-bottom: 30px;
+}
+
+#popup>div:nth-child(3){
+    background-color: paleturquoise;
+    position: relative;
+    top: 230px;
+}
+
+#popup>div:nth-child(3)>img{
+    position: relative;
+    left: 450px;
+}

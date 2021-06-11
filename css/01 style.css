@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    /*
+    상위 요소의 속성 상속
+    */
+}
+
+#wrap{
+    width: 1200px;
+    height: 700px;
+    background-color: aqua;
+    margin: 0 auto;
+}
+
+#header{
+    width: 1200px;
+    height: 100px;
+    background-color: aquamarine;
+
+    z-index: 2;
+    position: relative;
+    /*
+    높이가 없는 부모요소가 있는데
+    그것의 자식요소가 float속성을 쓰면 부모 높이가
+    사라지는 버그로 
+    clearfix를 사용하는 방법이 있다
+    */
+
+    /*
+    z-index값만 주는게 아니라
+    position: relative을 주고 난 후 따로 
+    top과 bottom등의 값을 안 줘도
+    z-index:값; 만큼의 수치가 위.아래로 이동이 가능
+    둘이 같이 값을 줘야함
+    */
+}
+
+#header>#logo{
+    width: 200px;
+    height: 100px;
+    float: left;
+    background-color: blueviolet;
+    
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+#header>#nav{
+    width: 1000px;
+    height: 100px;
+    float: left;
+    background-color: cadetblue;
+    
+    padding-top: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+
+#slide{
+    width: 1200px;
+    height: 300px;
+    background-color: antiquewhite;
+    overflow: hidden;
+    /*
+    넘친 다른 이미지를 숨기겠다
+    */
+}
+
+#contents{
+    width: 1200px;
+    height: 200px;
+    background-color: bisque;
+
+}
+
+#contents>#cont1{
+    width: 480px;
+    height: 200px;
+    float: left;
+    background-color: darkkhaki;
+}
+
+#contents>#cont2{
+    width: 360px;
+    height: 200px;
+    float: left;
+    background-color: darkorange;
+}
+
+#contents>#cont3{
+    width: 360px;
+    height: 200px;
+    float: left;
+    background-color: darksalmon;
+}
+
+#footer{
+    width: 1200px;
+    height: 100px;
+    background-color: blanchedalmond;
+}
+
+#footer>#logo{
+    width: 200px;
+    height: 100px;
+    background-color: goldenrod;
+    float: left;
+
+    padding-top: 25px;
+    box-sizing: border-box;
+}
+
+#footer>#copy{
+    width: 800px;
+    height: 100px;
+    background-color: indianred;
+    float: left;
+
+    padding-left: 30px;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+#footer>#sns{
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    float: left;
+}
+
+

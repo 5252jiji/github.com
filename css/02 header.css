@@ -1,0 +1,47 @@
+#header>#nav>#gnb{
+    float: right;
+    
+}
+
+#header>#nav>#gnb>li{
+    float: left;
+}
+
+#header>#nav>#gnb>li>a{
+    display: block;
+    width: 100px;
+    height: 40px;
+    background-color: indianred;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+#gnb li a:hover{
+    /*
+    gnb 밑에 있는 a전체
+    */
+    background-color: #222328;
+    color: #ffffff;
+}
+
+#lnb>li>a{
+    display: block;
+    width: 100px;
+    height: 40px;
+    background-color: indigo;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+#lnb{
+
+    display: none;
+    /*
+    스크립트 넣어서 메뉴에 마우스 댔을 때
+    아래로 내려오는 움직임 적용하면 됌
+    */
+}
